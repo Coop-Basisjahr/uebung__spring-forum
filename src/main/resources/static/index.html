@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forum</title>
+  <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Forum</h1>
+    <p>Angemeldet als: <span class="username"></span></p>
+    <form class="thread-form">
+      <div class="form-element">
+        <label for="title">Titel</label>
+        <input id="title" type="text" name="title" />
+      </div>
+      <div class="form-element">
+        <label for="text">Beschreibung</label>
+        <textarea id="text" name="text"></textarea>
+      </div>
+      <button type="submit" id="submit-form">Posten</button>
+    </form>
+  </header>
+  <div class="threads-container">
+    <template id="thread-template">
+      <div class="thread">
+        <h2 class="thread__title"></h2>
+        <p class="thread__text"></p>
+        <p class="thread__user"></p>
+      </div>
+    </template>
+  </div>
+
+  <div id="thread-modal" class="hidden">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="thread-modal__title"></h2>
+        <p class="thread-modal__user"></p>
+        <p class="thread-modal__text"></p>
+      </div>
+      <div class="hr"></div>
+      <form class="comment-form">
+        <label for="comment-input">Kommentar schreiben</label>
+        <textarea id="comment-input"></textarea>
+        <button type="submit" id="submit-comment">Kommentieren</button>
+      </form>
+      <div class="hr"></div>
+      <div class="comment-section">
+        <template id="comment-template">
+          <p class="comment__text">
+            <span class="comment__user"></span>
+            <br />
+          </p>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/usernames.js"></script>
+  <script src="js/dom.js"></script>
+  <script src="js/rest.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

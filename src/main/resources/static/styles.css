@@ -1,0 +1,144 @@
+:root {
+    box-sizing: border-box;
+    --color-bg: #fdf6f9;
+    --color-accent: #e99fc1;
+    --color-surface: #edd7c2;
+    --color-black: #252525;
+    --color-white: #fdf6f9;
+    --color-font: #6b443a
+}
+
+* {
+    font-family: sans-serif;
+    border-radius: 0;
+    color: var(--color-font);
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--color-bg)
+}
+
+button {
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: .4rem;
+    color: var(--color-white);
+    padding: .6rem 0;
+}
+
+input, textarea {
+    border: none;
+    padding: .4rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+}
+
+header {
+    width: min(90vw, 32rem);
+    margin: 0 auto 2rem;
+}
+
+.username {
+    font-style: italic;
+}
+
+.thread-form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.thread-form .form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- */
+
+.threads-container {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    width: min(90vw, 80rem);
+    margin: auto;
+}
+
+.thread {
+    background: var(--color-surface);
+    padding: .2rem 1.6rem;
+    border-radius: 1.2rem;
+}
+
+.thread__user {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+/* --- */
+
+#thread-modal.hidden {
+    display: none;
+}
+
+#thread-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    opacity: .4;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+    width: min(90vw, 40rem);
+    height: min(90vh, 60rem);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hr {
+    height: .1rem;
+    background: var(--color-font);
+}
+
+.modal-header,
+.comment__text {
+    padding: 0 1.2rem;
+}
+
+.thread-modal__user {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+    gap: .2rem;
+}
+
+.comment__user {
+    font-weight: 700;
+}
+
+.comment-section {
+    flex-grow: 1;
+    overflow: hidden scroll;
+}
