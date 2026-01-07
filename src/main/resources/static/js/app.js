@@ -1,4 +1,4 @@
-const baseUrl = window.location + "/api";
+const baseUrl = window.location + "api";
 const rest = RestService(baseUrl);
 const dom = DomController()
 

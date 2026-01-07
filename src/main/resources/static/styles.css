@@ -69,6 +69,10 @@ header {
     border-radius: 1.2rem;
 }
 
+.thread:hover {
+    cursor: pointer;
+}
+
 .thread__user {
     font-style: italic;
     font-size: .8rem;
