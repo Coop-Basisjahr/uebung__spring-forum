@@ -19,16 +19,19 @@ public class ThreadController {
 
     @PostMapping()
     public Thread postThread(@RequestBody Thread thread) {
-        return threadService.addThread(thread);
+        // TODO
+        throw new UnsupportedOperationException();
     }
 
     @PostMapping("/{threadTitle}/comment")
     public Thread postComment(@PathVariable String threadTitle, @RequestBody Comment comment) {
-        return threadService.addComment(threadTitle, comment);
+        // TODO
+        throw new UnsupportedOperationException();
     }
 
     @GetMapping()
     public List<Thread> getThreads() {
-        return threadService.getThreads();
+        // TODO
+        throw new UnsupportedOperationException();
     }
 }
