@@ -1,4 +1,4 @@
-package coop.ch.chatforum;
+package coop.ch.forum;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

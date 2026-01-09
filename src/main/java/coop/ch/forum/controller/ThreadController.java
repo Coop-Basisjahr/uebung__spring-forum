@@ -1,8 +1,8 @@
-package coop.ch.chatforum.controller;
+package coop.ch.forum.controller;
 
-import coop.ch.chatforum.data.Comment;
-import coop.ch.chatforum.data.Thread;
-import coop.ch.chatforum.service.ThreadService;
+import coop.ch.forum.data.Comment;
+import coop.ch.forum.data.Thread;
+import coop.ch.forum.service.ThreadService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

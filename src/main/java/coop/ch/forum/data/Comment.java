@@ -1,4 +1,4 @@
-package coop.ch.chatforum.data;
+package coop.ch.forum.data;
 
 public record Comment(
     User user,

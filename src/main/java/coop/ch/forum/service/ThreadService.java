@@ -1,7 +1,7 @@
-package coop.ch.chatforum.service;
+package coop.ch.forum.service;
 
-import coop.ch.chatforum.data.Comment;
-import coop.ch.chatforum.data.Thread;
+import coop.ch.forum.data.Comment;
+import coop.ch.forum.data.Thread;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
